@@ -1,0 +1,20 @@
+{
+  "name": "vendor_name/kata",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "eric",
+      "email": "email@example.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "src"
+    }
+  },
+  "require": {
+    "phpunit/phpunit": "^9.5"
+  }
+}
