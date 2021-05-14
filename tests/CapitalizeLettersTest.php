@@ -14,15 +14,15 @@ class CapitalizeLettersTest extends TestCase
     public function compare(string $expected, string $word)
     {
         $jadenCase = new CapitalizeLetters();
-
         $this->assertEquals($expected, $jadenCase->toJadenCase($word));
-
     }
 
     public function function_tests(): array
     {
         return [
             ["This Is A Test", "this is a test"],
+            ["This Is Capital Letters", "this is capital letters"],
+            ["This Is More Capital Letters", "this is more Capital Letters"],
         ];
     }
 }
