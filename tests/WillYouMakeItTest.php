@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 class WillYouMakeItTest extends TestCase
 {
     /**
-     * @dataProvider tests
+     * @dataProvider function_tests
      * @test
      */
     function will_the_car_make_the_distance($distance, $mpg, $fuelLeft, $expected)
@@ -17,7 +17,7 @@ class WillYouMakeItTest extends TestCase
         $this->assertEquals($expected, $calculate->calculate($distance, $mpg, $fuelLeft));
     }
 
-    function tests():array
+    function function_tests():array
     {
         return[
             [50, 25, 2, true ],

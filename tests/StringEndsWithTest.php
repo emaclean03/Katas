@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 class StringEndsWithTest extends TestCase
 {
     /**
-     * @dataProvider tests
+     * @dataProvider function_tests
      * @test
      */
     function endsWithString(string $string, string $ending, bool $expected)
@@ -17,13 +17,13 @@ class StringEndsWithTest extends TestCase
         $this->assertEquals($expected, $endsWith->compare($string,$ending));
     }
 
-    function tests():array
+    function function_tests():array
     {
         return[
             ["samurai", "ai", true ],
             ["Mike","easdfasdf", false ],
             ["test","st", true ],
-            ["abc\n", 'abc', true ],
+            ["abc\n", 'abc', false ],
         ];
     }
 }
