@@ -24,7 +24,7 @@ class IsVowelTest extends TestCase
             ['Does this have a vowel', 8 ],
             ['This will have a cat', 6 ],
             ['Does this have a vowel', 8 ],
-            ['Does this have a vowel', 8 ],
+            ['Does this have a vowel for hacktoberfest', 8 ],
             ["dvgd", 0 ],
         ];
     }
