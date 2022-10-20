@@ -8,6 +8,6 @@ class CapitalizeLetters
 {
     public function toJadenCase(string $word):string
     {
-        return ucwords($word);
+        return ucwords($word); //Adding for hacktoberfest :0
     }
 }
